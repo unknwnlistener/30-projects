@@ -1,0 +1,58 @@
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+  height: 250px;
+  width: 100px;
+  background-color: #000;
+  padding: 20px;
+}
+
+.container .candle {
+  height: 100%;
+  width: 100%;
+  background-color: orange;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.container .candle .flame {
+  flex-grow: 2;
+  background-color: red;
+  margin: inherit;
+  width: 40px;
+  position: relative;
+  border-radius: 0px 200% 10px;
+  transform: translateY(-5px) rotate(45deg) scale(1);
+  /* transform: scale(0.6); */
+}
+
+/* .container .candle .flame .inner-flame {
+  width: 20px;
+  height: 30px;
+  left: 25%;
+  bottom: 0;
+  position: absolute;
+  display: none;
+  background-color: #000;
+  transform: rotate(-45deg);
+} */
+
+.container .candle .stick {
+  flex-grow: 7;
+  background-color: white;
+  width: 40px;
+  margin: inherit;
+  border-radius: 10px 15px 0 0;
+}
+
+.container .candle .base {
+  flex-grow: 0.5;
+  background-color: gray;
+  width: 100px;
+  margin: inherit;
+  border-radius: 10px 10px 0 0;
+}
